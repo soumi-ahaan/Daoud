@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CriminalLawyer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/1d7637871ff7d7c709c0e54c77703e42?family=Pontif+LP+W01+Regular" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+
+    <!-- Toggler only visible on mobile/tab -->
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Desktop Menu -->
+    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Criminal Law</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Traffic Law</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Insight & Cases</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+            <a class=" btn-call text-decoration-none" href="#"><i class="fa-solid fa-phone-volume"></i>&nbsp;(02) 5120 2222</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Offcanvas Menu for Mobile -->
+<div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"></i><img src="images/handcuff.png" alt="">&nbsp;Criminal Law</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="images/trafficLaw.png" alt="">&nbsp;Traffic Law</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="images/gavel.png" alt="">&nbsp;Insight & Cases</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="images/about.png" alt="">&nbsp;About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="images/phone.png" alt="">&nbsp;Contact Us</a>
+        </li>
+        <li class="nav-item">
+            <a class=" btn-call text-decoration-none" href="tel:02 5120 2222"><i class="fa-solid fa-phone-volume"></i>(02) 5120 2222</a>
+          </li>
+      </ul>
+  </div>
+</div>
+<div class="hero-section">
+  <div class="container hero-content pb-5 mb-5">
+    <img src="images/logo.png" alt="Logo" class="mb-4 brand">
+    <h1>SYDNEY CRIMINAL DEFENCE &<br>TRAFFIC <span>LAWYERS</span></h1>
+    <p>Providing unmatched legal expertise for criminal & traffic matters, backed by our<br>reputation as a premier Sydney firm with a proven track record of success</p>
+    <a href="#" class="btn-call text-decoration-none">Free Consultation</a>
+  </div>
+ <div class="shape-divider"></div>
+  <img src="images/badge.png" alt="Experience Badge" class="experience-badge">
+</div>
+<div class="form-about">
+    <div class="container">
+    <div class="row align-items-center">    
+      <!-- Left Column: Form -->
+      <div class="col-lg-5 book">
+        <div class="form-card">
+        <h3 class="mt-4 text-center ">Book a Lawyer Now</h3>
+        <form>
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label>First Name</label>
+                <input type="text" class="form-control" placeholder="Enter Your Name" />
+              </div>
+              <div class="col-md-6">
+                <label> Last Name</label>
+                <input type="text" class="form-control" placeholder="Enter Your Last Name" />
+              </div>
+              <div class="col-md-6">
+               <label>Email</label>
+                <input type="email" class="form-control" placeholder="Enter Your Email Id" />
+              </div>
+              <div class="col-md-6">
+               <label>Phone</label>
+                <input type="tel" class="form-control" placeholder="Enter Your Phone No" />
+              </div>
+              <div class="col-md-6">
+               <label>Your Location</label>
+                <input type="text" class="form-control" placeholder="Where Are You Located ?" />
+              </div>
+              <div class="col-md-6">
+               <label>Court Date</label>
+                <input type="date" class="form-control" placeholder="Do you  Have a Court Date ?" />
+              </div>
+              <div class="col-md-12 mb-3">
+                <label>You Describe</label>
+                <textarea rows="5" class="form-control" placeholder="Briefly Describe Your Situation"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn-call w-100" >Hear From Us Next 1 Min</button>
+        </form>
+        </div>
+      </div>
+      <!-- Right Column: About -->
+      <div class="col-md-8 col-lg-5 about">
+        <h3>Been Charged with a Criminal or Traffic Offence? You Don’t Have to Go Through This Alone.</h3>
+        <p>If you’ve been charged with a criminal or traffic offence in Sydney, it’s normal to feel overwhelmed and unsure what to do. The legal system is complicated, and the consequences can be serious. Talk to us today – we’ll make sure you understand your rights and what to expect every step of the way.</p>
+         <button type="submit" class="btn btn-call w-40">Free 15 Minute Call</button>
+    </div>
+    </div>
+ </div>
+</div>
+<div class="service">
+<div class="container">
+  <div class="section-title mb-5 ">How can we help you?</div>
+  <div class="row g-1">
+    <!-- Row 1 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="service-card card1">
+        <img src="images/assult.png" alt="Assault" class="mx-auto d-block">
+        <h5>Assault</h5>
+        <p>(02) 5120 2222<br><small>(Case Solved)</small></p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="service-card card2">
+        <img src="images/drug.png" alt="Drug Offences" class="mx-auto d-block">
+        <h5>Drug Offences</h5>
+        <p>(02) 5120 2222<br><small>(Case Solved)</small></p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="service-card card3">
+        <img src="images/offence.png" alt="Drug Offences" class="mx-auto d-block">
+        <h5>Drug Offences</h5>
+        <p>(02) 5120 2222<br><small>(Case Solved)</small></p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="service-card card4">
+        <img src="images/traffic.png" alt="Traffic Offences" class="mx-auto d-block">
+        <h5>Traffic Offences</h5>
+        <p>(02) 5120 2222<br><small>(Case Solved)</small></p>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="service-card">
+        <img src="images/gun.png" alt="License Appeals" class="mx-auto d-block">
+        <h5>License Appeals</h5>
+        <p>(02) 5120 2222<br><small>(Case Solved)</small></p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="service-card highlight">
+        <img src="images/weight.png" alt="More Services" class="mx-auto d-block">
+        <h5>More Services</h5>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="service-card">
+        <img src="images/fraud.png" alt="Fraud Offences" class="mx-auto d-block">
+        <h5>Fraud Offences</h5>
+        <p>(02) 5120 2222<br><small>(Case Solved)</small></p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="service-card">
+        <img src="images/drink.png" alt="Drink Driving" class="mx-auto d-block">
+        <h5>Drink Driving</h5>
+        <p>(02) 5120 2222<br><small>(Case Solved)</small></p>
+      </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="service-card card9">
+        <img src="images/driving.png" alt="Negligent Driving" class="mx-auto d-block">
+        <h5>Negligent Driving</h5>
+        <p>(02) 5120 2222<br><small>(Case Solved)</small></p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="service-card card10">
+        <img src="images/homicide.png" alt="Homicide" class="mx-auto d-block">
+        <h5>Homicide</h5>
+        <p>(02) 5120 2222<br><small>(Case Solved)</small></p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3 ">
+      <div class="service-card card11">
+        <img src="images/domestic.png" alt="Domestic Violence" class="mx-auto d-block">
+        <h5>Domestic Violence</h5>
+        <p>(02) 5120 2222<br><small>(Case Solved)</small></p>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="service-card card12">
+        <img src="images/appeal.png" alt="Appeals" class="mx-auto d-block">
+        <h5>Appeals</h5>
+        <p>(02) 5120 2222<br><small>(Case Solved)</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="cta1">
+  <div class="container">
+    <div class="row align-items-center legal-section ">
+      <!-- Left Image -->
+      <div class="col-lg-6 img-box">
+        <img src="images/cta1.png" alt="Police on duty">
+      </div>
+
+      <!-- Right Text Content -->
+      <div class="col-lg-6 legal-text-box">
+        <h3 class="legal-heading">40+ Years of Combined Experience. Sydney's Toughest Criminal & Traffic Cases.</h3>
+        <p class="legal-text">
+          If you’ve been charged with a criminal or traffic offence in Sydney, it’s normal to feel overwhelmed anFacing criminal charges or a serious traffic violation? 
+          You need experienced legal representation in your corner. 
+          Our team will carefully assess your case, develop a strategic defence plan, and fight tirelessly to protect your rights and freedom.d unsure what to do. 
+          The legal system is complicated, and the consequences can be serious. 
+          Talk to us today – we’ll make sure you understand your rights and what to expect every step of the way.
+        </p>
+        <button class="btn btn-call">Free 15 Minute Call</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="expand pt-5">
+  <div class="row align-items-stretch">
+  <h2 class="title">OUR EXPERTISE</span></h2>
+    <!-- Left Column: Static Image -->
+    <div class="col-md-3 mb-3 mb-md-0">
+      <img src="images/justiceLady.png" alt="Law Image" class="left-image">
+    </div>
+
+    <!-- Right Column: Expanding Gallery -->
+    <div class="col-md-9">
+      <div class="text-gallery">
+
+        <div class="panel">
+          <div class="vertical-text">CRIMINAL LAW↗</div>
+          <div class="details">
+            <img src="images/key1.png" alt="Criminal Law">
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="vertical-text">TRAFFIC LAW↗</div>
+          <div class="details">
+            <img src="images/key1.png" alt="Traffic Law">
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="vertical-text">FRAUD OFFENCES↗</div>
+          <div class="details">
+            <img src="images/key1.png" alt="Fraud Cases">
+          </div>
+        </div>
+        <div class="panel">
+          <div class="vertical-text">ASSULT OFFENCES↗</div>
+          <div class="details">
+            <img src="images/key1.png" alt="Fraud Cases">
+          </div>
+        </div>
+        <div class="panel">
+          <div class="vertical-text">DRUG OFFENCES↗</div>
+          <div class="details">
+            <img src="images/key1.png" alt="Drug Offences">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="cta2">
+<div class="container">
+    <div class="row align-items-center legal-section g-0">
+      <!-- Left Text Content -->
+      <div class="col-lg-6 legal-text-box">
+        <h3 class="legal-heading">Don't Face Charges Alone. Get Experienced Legal Representation On Your Side.</h3>
+        <p class="legal-text">
+          A criminal record or loss of license can have a lasting impact on your life. 
+          Our team of skilled negotiators and courtroom advocates is dedicated to 
+          minimising the consequences you face and achieving the best possible 
+          outcome for your future.
+        </p>
+        <button class="btn btn-call">Free 15 Minute Call</button>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-lg-6 img-box">
+        <img src="images/cta2.png" alt="Police on duty">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="action1">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Image -->
+        <div class="col-lg-6 img-box">
+          <img src="images/action1.png" alt="Handcuffed person">
+        </div>
+
+        <!-- Right Text Box -->
+        <div class="col-lg-6">
+          <div class="legal-box">
+            <h2><span>ARRESTED OR CHARGED?</span> GET<br>
+              IMMEDIATE LEGAL HELP NOW.</h2>
+            <p>Book your <strong>Free 15-Min</strong> consultation with our criminal<br>
+              defence & traffic lawyers today</p>
+            <div class="action-btn">
+              <button type="submit" class="btn btn-call">Free 15 Minute Call</button>
+              <button type="submit" class="btn btn-black">Book A Lawyer Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="action2">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Text Box -->
+        <div class="col-lg-6">
+          <div class="legal-box">
+            <h2>DON'T GO AT IT ALONE.<span>OUR<br/> LAWYERS ARE HERE TO HELP.</span> </h2>
+            <p>We represent clients facing a variety of criminal & traffic<br/> matters every day, in courts throughout
+             the Sydney <br/> Metropolitan Area and throughout the state of NSW.</p>
+            <div class="action-btn">
+              <button class="btn btn-call">Free 15 Minute Call</button>
+              <button class="btn btn-black">Book A Lawyer Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- Right Image -->
+        <div class="col-lg-6 img-box">
+          <img src="images/action2.png" alt="Handcuffed person">
+        </div>
+      </div>
+    </div>
+</div>
+<div class="why-choose-section">
+      <div class="row g-0 d-lg-flex">
+        <!-- Left Side Image + Overlay -->
+        <div class="col-lg-6 col-md-6">
+          <div class="left-box">
+            <div class="left-box-content">
+              <img src="images/logo.png" alt="Logo" class="brand">
+              <h2 class="mt-4">OVER <span>40 YEARS</span> OF <br/>EXPERIENCE.</h2>
+              <button class="btn btn-call">Book A Lawyer Now</button>
+            </div>
+          </div>
+          </div>
+        </div>
+        <!-- Right Side Accordion + Text -->
+        <div class="col-lg-6 col-md-6 accordion">
+         <div class="faq-box" id="faq1" onclick="toggleFaq('faq1')">
+      <div class="faq-question">
+        <span class="highlight-orange">Why Choose Us</span> As Your Sydney Criminal & Traffic Lawyers ?<br/>
+        <span class="sub-line">Unrivalled Criminal & Traffic Law Expertise</span>
+        <span class="toggle-icon" >+</span>
+      </div>
+      <div class="faq-answer">
+       With decades of combined experience exclusively dedicated to criminal and traffic law, our team possesses a depth of knowledge that surpasses general practice firms.We have an intricate understanding of both fields, including court procedures, prosecution tactics, and the constantly evolving legislation surrounding each. This allows us to anticipate challenges and build the strongest possible defence for your case.
+      </div>
+    </div>
+    <div class="faq-box" id="faq2" onclick="toggleFaq('faq2')">
+      <div class="faq-question">
+         Strategic & Aggressive Defence
+        <span class="toggle-icon" >+</span>
+      </div>
+      <div class="faq-answer">
+        With decades of combined experience exclusively dedicated to criminal and traffic law, our team possesses a depth of knowledge that surpasses general practice firms.We have an intricate understanding of both fields, including court procedures, prosecution tactics, and the constantly evolving legislation surrounding each. This allows us to anticipate challenges and build the strongest possible defence for your case.
+      </div>
+    </div>
+    <div class="faq-box" id="faq3" onclick="toggleFaq('faq3')">
+      <div class="faq-question">
+         Minimising Consequences
+        <span class="toggle-icon" >+</span>
+      </div>
+      <div class="faq-answer">
+        With decades of combined experience exclusively dedicated to criminal and traffic law, our team possesses a depth of knowledge that surpasses general practice firms.We have an intricate understanding of both fields, including court procedures, prosecution tactics, and the constantly evolving legislation surrounding each. This allows us to anticipate challenges and build the strongest possible defence for your case.
+      </div>
+    </div>
+    <div class="faq-box" id="faq4" onclick="toggleFaq('faq4')">
+      <div class="faq-question">
+         Navigating the Legal System
+        <span class="toggle-icon" >+</span>
+      </div>
+      <div class="faq-answer">
+        With decades of combined experience exclusively dedicated to criminal and traffic law, our team possesses a depth of knowledge that surpasses general practice firms.We have an intricate understanding of both fields, including court procedures, prosecution tactics, and the constantly evolving legislation surrounding each. This allows us to anticipate challenges and build the strongest possible defence for your case.
+      </div>
+    </div>
+     <div class="faq-box" id="faq5" onclick="toggleFaq('faq5')">
+      <div class="faq-question">
+        Peace of Mind
+        <span class="toggle-icon" >+</span>
+      </div>
+      <div class="faq-answer">
+       With decades of combined experience exclusively dedicated to criminal and traffic law, our team possesses a depth of knowledge that surpasses general practice firms.We have an intricate understanding of both fields, including court procedures, prosecution tactics, and the constantly evolving legislation surrounding each. This allows us to anticipate challenges and build the strongest possible defence for your case.
+      </div>
+    </div>
+     <div class="faq-box" id="faq6" onclick="toggleFaq('faq6')">
+      <div class="faq-question">
+         Can I refer other brokers?
+        <span class="toggle-icon" >+</span>
+      </div>
+      <div class="faq-answer">
+        With decades of combined experience exclusively dedicated to criminal and traffic law, our team possesses a depth of knowledge that surpasses general practice firms.We have an intricate understanding of both fields, including court procedures, prosecution tactics, and the constantly evolving legislation surrounding each. This allows us to anticipate challenges and build the strongest possible defence for your case.
+      </div>
+    </div>
+    <div class="faq-box" id="faq7" onclick="toggleFaq('faq7')">
+      <div class="faq-question">
+        Convenient Location & Accessibility​
+        <span class="toggle-icon" >+</span>
+      </div>
+      <div class="faq-answer">
+        With decades of combined experience exclusively dedicated to criminal and traffic law, our team possesses a depth of knowledge that surpasses general practice firms.We have an intricate understanding of both fields, including court procedures, prosecution tactics, and the constantly evolving legislation surrounding each. This allows us to anticipate challenges and build the strongest possible defence for your case.
+      </div>
+    </div>
+    </div>
+</div>
+<div class="law-section">
+  <div class="container ">
+    <div class="row align-items-center">
+      <!-- Left Column -->
+      <div class="col-md-6">
+        <h2 class="section-title">We Are Serious <span>About Defence</span></h2>
+        <p class="section-text">
+          At the heart of Daoud Legal is a solemn commitment to defending those accused of criminal and traffic offenses.
+          We tackle each case with the seriousness it deserves, ensuring your side is heard and your rights are protected.
+        </p>
+        <div class="d-flex gap-3 buttons">
+          <button class="btn btn-call">Free 15 Minute Call</button>
+          <button class="btn btn-black">Book A Lawyer Now</button>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-md-6 mt-4 mt-md-0 d-flex justify-content-center">
+        <div class="law-images flex-row">
+          <div class="d-flex flex-column gap-3 mb-3">
+            <img src="images/grid2.png" alt="Law 1">
+            <div class="years-box">40<br>YEARS</div>
+          </div>  
+          <img src="images/grid1.png" alt="Law 2">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="testimonial-section">
+  <div class="container">
+    <h2>What Our Clients Say</h2>
+    <div class="row g-4 ">
+      <!-- Card 2 -->
+       <div class="col-md-4">
+        <div class="testimonial-card">
+          <div class="card-content">
+            <div class="quote-icon"><img src="images/quote.png" alt=""></div>
+          <p>
+            Robert was exceptional in all advice given.He took the time to understand our case with such empathy and honesty.
+            with great confidence leading to the best result possible as intended. Thank you Robert and Heath.
+          </p>
+          <div class="stars"><img src="images/star.png" alt="">
+            <img src="images/star.png" alt="">
+            <img src="images/star.png" alt="">
+            <img src="images/star.png" alt="">
+            <img src="images/star.png" alt="">
+          </div>
+          </div>
+          <div class="profile">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Rayleen">
+            <div class="profile-info">
+              <strong>RAYLEEN KABLE</strong><br>
+              <small>May 7, 2025</small>
+            </div>
+          </div>
+          <div class="curve1"></div>
+          <div class="curve2"></div>
+        </div>
+
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <div class="card-content">
+            <div class="quote-icon"><img src="images/quote.png" alt=""></div>
+          <p>
+           I recently had the pleasure of working with a lawyer from this firm and I must say, I was extremely impressed
+           with their efficiency and professionalism.They were able to handle my matter swiftly and effectively.
+          </p>
+          <div class="stars"><img src="images/star.png" alt="">
+            <img src="images/star.png" alt="">
+            <img src="images/star.png" alt="">
+            <img src="images/star.png" alt="">
+            <img src="images/star.png" alt="">
+          </div>
+          </div>
+          <div class="profile">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Rayleen">
+            <div class="profile-info">
+              <strong>ELIZABETH CARALIS</strong><br>
+              <small>Mar 27, 2025</small>
+            </div>
+          </div>
+          <div class="curve1"></div>
+          <div class="curve2"></div>
+        </div>
+
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <div class="card-content">
+            <div class="quote-icon"><img src="images/quote.png" alt=""></div>
+          <p>
+           Although I’m not the accused in my situation and I called Robert in error, he was great & understanding. 
+           He offered me sound advice regarding my situation in wanting to take civil action against the other party
+          </p>
+          <div class="stars"><img src="images/star.png" alt="">
+            <img src="images/star.png" alt="">
+            <img src="images/star.png" alt="">
+            <img src="images/star.png" alt="">
+            <img src="images/star.png" alt="">
+          </div>
+          </div>
+          <div class="profile">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Rayleen">
+            <div class="profile-info">
+              <strong>LUKE SINOZIC</strong><br>
+              <small>Apr 16, 2025</small>
+            </div>
+          </div>
+          <div class="curve1"></div>
+          <div class="curve2"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+ <div class="container footer1">
+    <div class="row align-items-center">
+      <!-- Left Image -->
+      <div class="col-md-3 footer1-image-left">
+        <img src="images/ftimg1.png" alt="Lawyer Meeting">
+        <div class="right-overlay"></div>
+      </div>
+
+      <!-- Center Content -->
+      <div class="col-md-6 footer1-content text-center">
+        <h1>Secure Sydney’s Best Lawyers<br>On Your Side</h1>
+        <p>We’re ready to help 24/7. Book a free consultation or call us now.</p>
+        <div class="mt-3 g-3">
+          <button class="btn btn-custom btn-call">Free 15 Minute Call</button>
+          <button class="btn btn-custom btn-black">Book A Lawyer Now</button>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-md-3 footer1-image-right text-end">
+        <img src="images/ftimg2.png" alt="Gavel"> <!-- replace with gavel image -->
+      </div>
+    </div>
+  </div>
+<div class="footer">
+ </div><div class="footer2">
+  <div class="container">
+    <div class="row text-start">
+      <div class="col-md-4 mb-4">
+        <div class="logo">
+         <img src="images/logo.png" alt="">
+        </div>
+        <p><i class="fas fa-phone ms-3 ">&nbsp;</i>(02) 5120 2222</p>
+        <p><i class="fas fa-envelope ms-3">&nbsp;</i>info@daoudlawyers.com.au</p>
+        <div class="input d-flex ms-2">
+          <input type="email" class="form-control" placeholder="Enter Your Email">
+          <button class="btn" type="button"><i class="fa-brands fa-telegram fa-beat" style="color: #cb935d;"></i></button>
+        </div>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <h6>CRIMINAL LAW</h6>
+        <a href="#">Assault Offences</a>
+        <a href="#">Drug Offences</a>
+        <a href="#">Firearm Offences</a>
+        <a href="#">Fraud Offences</a>
+        <a href="#">Goods in Custody</a>
+        <a href="#">Homicide</a>
+        <a href="#">Larceny and Robbery</a>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <h6>TRAFFIC LAW</h6>
+        <a href="#">Drink Driving</a>
+        <a href="#">Drug Driving</a>
+        <a href="#">Licence Suspension</a>
+        <a href="#">Driving While Disqualified</a>
+        <a href="#">Negligent Driving</a>
+        <a href="#">SDRO Enforcement Orders</a>
+        <a href="#">Traffic Offenders Program</a>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <h6>PROCESSES, INSIGHTS & CASES</h6>
+        <a href="#">What is a Section 10?</a>
+        <a href="#">Firearm Offences</a>
+        <a href="#">Pleading Guilty</a>
+        <a href="#">Bail</a>
+        <a href="#">Insight & Cases</a>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <h6>QUICK LINKS</h6>
+        <a href="#">Who We Are</a>
+        <a href="#">Who's Robert Daoud</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookies Policy</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer2-bottom">
+    <div class=" d-flex  bottom-bar justify-content-between align-items-center container">
+      <p class="mb-0">Copyright © 2025 Sydney Criminal Defence & Traffic Lawyers. All rights reserved. Website by Commission Legal</p>
+      <div class="social-icons d-flex">
+        <a href="#"><i class="fab fa-facebook fa-beat"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-beat"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-beat"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-beat"></i></a>
+      </div>
+    </div>
+      
+    </div>
+</div>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

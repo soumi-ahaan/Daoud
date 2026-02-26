@@ -1,0 +1,887 @@
+ body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Lato', sans-serif;
+      z-index: 1;
+    }
+.navbar {
+      padding: 0px 0px;
+      background: rgba(255, 255, 255, 0); /* semi-transparent white */
+      backdrop-filter: blur(10px);          /* actual blur effect */
+      -webkit-backdrop-filter: blur(10px);  /* Safari support */
+      z-index: 4;
+    }
+    .navbar-brand img{
+      width:150px;
+    }
+     .navbar .navbar-nav .nav-link {
+      font-weight: 500;
+      margin-right: 20px;
+      color: white;
+      font-family: 'Mulish', sans-serif;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #CB935D;
+    }
+    .btn-call {
+      background-color: #CB935D;
+      border-radius: 20px;
+      padding: 10px 15px;
+      color: black;
+      font-weight: 500;
+      border: none;
+    }
+    .hero-section {
+      background: url('images/banner.png') no-repeat top center;
+      background-size: cover;
+      position: relative;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+ .brand{
+  width:250px;
+ }
+    
+ .shape-divider {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      background-color:white;
+      clip-path: polygon(0 100%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+    }
+
+    .hero-content h1{
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 1.3;
+      font-family: "Pontif LP W01 Regular";
+      color: white;
+    }
+
+    .hero-content h1 span {
+      color: #d6a257;
+    }
+
+    .hero-content p {
+      font-size: 1.1rem;
+      margin: 20px 0;
+    }
+    .experience-badge {
+      width: 130px;
+      position: absolute;
+      bottom: 0px;
+      right: 70px;
+      z-index: 2;
+    }
+.form-about {
+   background: url("images/back2.png")no-repeat top center;
+   background-size: cover;
+  margin: 0px 0 30px 50px;
+}
+.book{
+  z-index: 3;
+  margin-top: -100px;
+  /* border: .75px solid #EBECED;
+  box-shadow: 0px 0px 25px 10px #0000001A;
+  color: #fff; */
+}
+.form-card{
+  background-color: transparent;
+  border: .75px solid #EBECED;
+  box-shadow: 0px 0px 25px 10px #0000001A;
+  color: #fff;
+}
+form{
+  padding: 25px;
+
+}
+.form-card h3 {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 1.3;
+      font-family: "Pontif LP W01 Regular";
+      color: white;
+    }
+form label{
+  margin-bottom: 10px;
+  color: black;
+}
+.form-control{
+  border-color:#0D0D0DA6;
+  padding: 8px;
+  border-radius: 20px;
+}
+.about{
+  margin: -50px 40px 0 68px;
+}
+.about h3{
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 45px;
+  text-transform: uppercase;
+  text-align: left;
+  color: black;
+   font-family: "Pontif LP W01 Regular";
+}
+.service{
+  background-color:#F2F2F0;
+  padding: 60px 50px;
+}
+
+.section-title{
+   font-size: 35px;
+  font-weight: 300;
+  line-height: 45px;
+  text-transform: uppercase;
+  text-align: left;
+  color: black;
+  text-align: center;
+   font-family: "Pontif LP W01 Regular";
+}
+ .service-card {
+      background: #fff;
+      padding:  10px;
+      text-align: center;
+      transition: 0.3s ease-in-out;
+      width: 320px;
+      height: 240px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card1{
+      border-top-left-radius: 12px;
+    }
+    .card4{
+      border-top-right-radius: 12px;
+    }
+    .card9{
+      border-bottom-left-radius: 12px;
+    }
+    .card12{
+      border-bottom-right-radius: 12px;
+    }
+    .service-card img {
+      width:60px;
+      margin-bottom: 15px;
+      opacity: 1;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .service-card h5 {
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+      font-family: "Pontif LP W01 Regular";
+    }
+
+    .service-card p {
+      font-size: 16px;
+      color: #a14a3f;
+      margin: 0;
+      line-height: 1.4;
+      font-family: 'Mulish', sans-serif;
+    }
+
+    .highlight {
+      background: url("images/more.png") no-repeat top center;
+      background-size: cover;
+      color: white;
+      border-radius: 12px;
+    }
+
+    .highlight img {
+      filter: brightness(0) invert(1);
+    }
+    .service-card:hover{
+      background: url("images/more.png") no-repeat top center;
+      background-size: cover;
+      color: white;
+      border-radius: 12px;
+    }
+    .service-card:hover p{
+       color: #fff;
+    }
+     .service-card:hover img{
+      filter: invert(100%);
+     }
+.cta1{
+  background: #0D0D0D;
+  color: #000;
+  padding: 60px 0;
+}
+.legal-section {
+      overflow: hidden;
+      margin: auto;
+    }
+    .legal-text-box {
+      width:680px;
+      height:400px;
+      padding: 30px 40px;
+      background-color: #2C2C2C;
+      border-radius: 12px;
+      color: #dcdcdc;
+      position: relative;
+      margin-left:-40px;
+    }
+    .cta1 .legal-text-box::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 8px;
+      height: 100%;
+      background-color: #d5a06d;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+      
+    }
+    .legal-heading {
+      font-family: "Pontif LP W01 Regular";
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 36px;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+    }
+    .legal-text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0%;
+      text-align: justify;
+    }
+    .img-box img {
+      width: 634px;
+      height: 530px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .cta1 .img-box {
+      margin-left:0px;
+    }
+    .cta2{
+    background: #0D0D0D;
+    color: #000;
+    padding: 60px 0px ;
+    }
+    .cta2 .legal-text-box::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 8px;
+      height: 100%;
+      background-color: #d5a06d;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+    }
+    .cta2 .img-box{
+      z-index: 1;
+      margin-left: -62px;
+    }
+    .cta2 .legal-text-box{
+      width:680px;
+      height:300px;
+      padding: 30px 40px;
+      z-index: 3;
+      margin-left: 20px;
+    }
+     .action1 {
+      padding: 60px 0;
+    }
+
+    .action1 .legal-box {
+      padding: 40px 0px 40px 80px;
+      position: relative;
+      background-color: transparent;
+      width:90%;
+      margin-left: 60px;
+      
+    }
+ .action1 .legal-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom:0;
+      width: 50%;
+      height: 100%;
+      border-top: 3px solid #CB935D;
+      border-right: 3px solid #CB935D;
+      border-bottom: 3px solid #CB935D;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      box-sizing: border-box;
+    }
+    .legal-box h2 {
+      font-size: 26px;
+      line-height: 40px;
+      font-weight: 400;
+      color: #000;
+      font-family: "Pontif LP W01 Regular";
+      text-align: justify;
+    }
+
+    .legal-box span {
+      color: #d5a06d;
+      font-weight: 400;
+      text-align: justify;
+    }
+
+    .legal-box p {
+      margin-top: 15px;
+      font-size: 1rem;
+      color: #444;
+      text-align: justify;
+    }
+    .action-btn{
+      display: flex;
+      gap:30px;
+    }
+    .btn-black {
+      background-color: black;
+      border-radius: 20px;
+      padding: 10px 15px;
+      color: white;
+      font-weight: 500;
+      border: none;
+    }
+    .action1{
+      background: url("images/back2.png")no-repeat right center;
+      background-size: cover;
+      padding: 60px 0px ;
+    }
+    .action1 .img-box img , .action2 .img-box img  {
+      width: 635px;
+      height: 399px;
+      border-radius: 4px;
+      object-fit: cover;
+      margin-left: 10px;
+    }
+     .action2{
+      background: url("images/back2.png")no-repeat left;
+      background-size: cover;
+      padding: 60px 0px ;
+     }
+     .action2 .legal-box {
+      padding: 40px 0px 40px 80px;
+      position: relative;
+      background-color: transparent;
+      width:100%;
+      margin-left: 20px;
+    }
+     .action2 .legal-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom:0;
+      width: 50%;
+      height: 100%;
+      border-top: 3px solid #CB935D;
+      border-left: 3px solid #CB935D;
+      border-bottom: 3px solid #CB935D;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      box-sizing: border-box;
+    }
+    .why-choose-section {
+      display: flex;
+      background: url('images/back2.png') no-repeat center center/cover;
+    }
+.accordion{
+  padding: 3rem;
+  margin:  3rem;
+}
+    .left-box {
+      position: relative;
+      background: url('images/banner2.png') no-repeat center center/cover;
+      width:600px;
+      height: 93%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+     .left-box::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.65); /* Full overlay */
+      z-index: 1;
+    }
+    .left-box-content {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .left-box h2 {
+      font-size: 34px;
+      line-height: 48px;
+      font-weight: 400;
+      color: #ffffff;
+      font-family: "Pontif LP W01 Regular";
+      text-align: center;
+    }
+    .left-box span{
+      border-bottom: 3px solid #d5a06d;
+    }
+  
+   .faq-box {
+    padding:30px 10px;
+    border-bottom: .1px solid #777777;
+    }
+
+   .faq-question {
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #000000;
+    font-family: "Pontif LP W01 Regular";
+    text-transform: uppercase;
+    }
+
+    .faq-answer {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #777777;
+      
+    }
+
+    .toggle-icon {
+      float: right;
+      color: #777777;
+      cursor: pointer;
+      font-size: 24px;
+    }
+    .highlight-orange{
+      color: #d5a06d;
+    }
+    .sub-line{
+      font-size: 16px;
+    }
+ .law-section {
+      background-image: url('images/texture1.png');
+      background-repeat: repeat;
+      padding: 60px 0;
+    }
+   .law-section  .section-title {
+      font-size: 24px;
+      font-family: "Pontif LP W01 Regular";
+      text-transform: uppercase;
+      font-weight: 500;
+      margin: 20px 0px;
+      width: 450px;
+    
+    }
+    .section-title span {
+      color: #e1a873;
+    }
+   .law-section  .section-text {
+      color: #333;
+      margin: 20px;
+      width: 410px;
+      text-align: justify;
+    }
+    .law-section  .buttons {
+      margin: 0px 20px;
+    }
+    .law-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-left: 80px;
+    }
+    .law-images img {
+      width: 260px;
+      /* height: 190px; */
+      object-fit: cover;
+      border-radius: 15px;
+    }
+    .years-box {
+      width: 260px;
+      height: 120px;
+      background-color: black;
+      color: white;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      font-size: 32px;
+      font-weight: 500;
+      font-family: "Pontif LP W01 Regular";
+    }
+
+  .testimonial-section {
+  position: relative;
+  background: url('images/action2.png') center right / cover no-repeat;
+  margin-bottom: 50px;
+  padding: 80px 0;
+  text-align: center;
+  z-index: 1;
+  color: white;
+  overflow: hidden;
+}
+
+.testimonial-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.884); /* semi-transparent black */
+  z-index: -1;
+}
+    .testimonial-section h2 {
+      color: #fff;
+      font-size: 32px;
+      margin-bottom: 60px;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-family: "Pontif LP W01 Regular";
+    }
+    .testimonial-card {
+      background-color: #2C2C2C;
+      border-radius: 20px 20px 20px 0;
+      padding: 90px 30px;
+      position: relative;
+      height: 100%;
+      color: #ddd;
+    }
+    /* Top-Left border */
+     .testimonial-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 76%;
+      border-top: 2px solid #fff;
+      border-left: 2px solid #fff;
+      border-top-left-radius: 20px;
+      box-sizing: border-box;
+    }
+
+    /* Top-right-Bottom border only */
+    .testimonial-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom:0;
+      width: 50%;
+      height: 100%;
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-sizing: border-box;
+    }
+    .testimonial-card p {
+      font-size: 15px;
+    }
+    .stars {
+      color: #f5c518;
+      margin-top: 15px;
+    }
+    .profile {
+     background-color: rgba(0, 0, 0, 0.87);
+      width:12.5rem;
+      height:3.75rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left:0;
+      bottom:0;
+      border-radius: 0 12px 0 0;
+      padding: 0.3rem;
+    }
+     .profile::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom:0;
+      width: 91%;
+      height: 80%;
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+      border-top-right-radius: 12px;
+      box-sizing: border-box;
+    }
+.profile::after{
+  content: "";
+  position:absolute;
+  width: 1.125rem;
+  height:1.25rem;
+  background-color: #2C2C2C;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  top:-18px;
+  left:0px;
+  border-radius:0 0 0 6px;
+}
+.curve1, .curve2{
+  content: "";
+  position:absolute;
+  width: 1.125rem;
+  height:1.25rem;
+}
+.curve1{
+  background-color: #2C2C2C;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-radius:0 0 0 8px;
+  left: 47.62%;
+  bottom:0px;
+}
+    .profile img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    .profile-info {
+      text-align: left;
+      font-size: 10px;
+      margin-left: 15px;
+      color: #fff;
+      font-family: "Pontif LP W01 Regular";
+    }
+    .quote-icon img{
+      width: 60px;
+    }
+    .stars{
+      display: flex;
+    }
+    .card-content{
+      text-align: left;
+      margin-top: -60px;
+    }
+.footer{
+background: url('images/action2.png') center right / cover no-repeat;
+text-align: center;
+z-index: -1;
+color: white;
+overflow: hidden;
+height: 30%;
+margin-top:-150px;
+filter: brightness(.2);
+}
+ .footer1 {
+      background-color:#F2F2F0;
+      position: relative;
+      overflow: hidden;
+      z-index:1;
+      border-radius: 22px;
+      width: 84%;
+    }
+ .right-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to left, #fffafada 50%, transparent 100%);
+  pointer-events: none; /* Prevents it from blocking clicks */
+}
+.footer1-content{
+  margin-left: 0px;
+}
+    .footer1-content h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      font-family: "Pontif LP W01 Regular";
+      text-transform: uppercase;
+      color: #000;
+    }
+    .footer1-content p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+    .footer1-content .btn-custom {
+      padding: 10px 25px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .footer1-image-left img,
+    .footer1-image-right img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+    .footer1-image-left img{
+      margin-left: -10px;
+      transform: rotate(90deg);
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+     .footer2 {
+      background-color: #0e0e0e;
+      padding: 60px 20px 20px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .footer2 a {
+      color: #ffffff;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .footer2 a:hover {
+      color: #fff;
+    }
+    .footer2 .logo img {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+    .footer2 p,h6{
+      color:#fff;
+    }
+    .footer2 .input {
+      width: 250px;
+      margin-top: 15px;
+    }
+ .footer2 .input .form-control {
+ background: #D9D9D91A;
+; /* semi-transparent white */
+  backdrop-filter: blur(10px);          /* blur behind the element */
+  -webkit-backdrop-filter: blur(10px);  /* Safari support */
+  border: .5px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+ border-radius: 20px;
+  color: #fff;
+}
+.footer2 .input .form-control::placeholder{
+  color: #fff;
+}
+.footer2 .input .btn {
+    margin-left: -46px;
+    }
+    .footer2 .input .btn i{
+      font-size: 26px;
+    }
+    .footer2-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);;
+      padding-top: 15px;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #ffffff;
+    }
+    .social-icons a {
+      color: #cfa36b;
+      font-size: 22px;
+      margin-right: 15px;
+    }
+    .expand{
+      overflow-x: hidden;
+      background-color: #000;
+    }
+    .expand .title{
+      font-size: 24px;
+      font-family: "Pontif LP W01 Regular";
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+   .left-image {
+      width: 400px;
+      height: 610px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .text-gallery {
+      display: flex;
+      height: 600px;
+      overflow: hidden;
+    }
+
+    .panel {
+      flex: 1;
+      transition: flex 0.5s ease;
+      background-color: #000;
+      border-right: 1px solid #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .panel:hover {
+      flex: 3;
+      background-color: #000;
+    }
+
+    .panel .vertical-text {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 2rem;
+      font-family: "Pontif LP W01 Regular";
+      text-transform: uppercase;
+      font-weight: 300;
+      white-space: wrap;
+      color: white;
+      z-index: 2;
+    }
+
+    .panel .details {
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 5px;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .panel:hover .details {
+      opacity: 1;
+    }
+
+    .panel .details img {
+      height: 80%;
+      width: 100%;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+    .footer2 .input {
+    width: 200px;
+    }
